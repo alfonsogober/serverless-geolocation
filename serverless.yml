@@ -1,0 +1,35 @@
+service: geolocation
+
+custom:
+  stage: ${opt:stage, self:provider.stage}
+
+provider:
+  name: aws
+  runtime: nodejs6.10 # Node 8 is not yet supported by Lambda@Edge, only in normal Lambda
+  stage: dev
+  memorySize: 256
+  timeout: 30
+  region: us-east-1
+  apiKeys:
+    - ${self:custom.stage}-geolocation-apikey
+  environment:
+    DOMAIN: mydomain.com # replace this with your domain name
+  iamRoleStatements:
+    - Effect: "Allow"
+      Action:
+        - logs:CreateLogGroup
+        - logs:CreateLogStream
+        - logs:PutLogEvents
+      Resource: "*"
+
+functions:
+  edgeRedirect:
+    handler: handler.edgeRedirect
+  countryLookup:
+    handler: handler.countryLookup
+    events:
+      - http:
+          path: /
+          method: get
+          private: true
+          cors: true

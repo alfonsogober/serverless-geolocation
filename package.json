@@ -1,0 +1,28 @@
+{
+  "name": "serverless-geolocation",
+  "description": "A bundle of serverless functions designed to allow user geolocation and actions based on that detection.",
+  "version": "1.0.0",
+  "main": "handler.js",
+  "dependencies": {
+    "cookie": "^0.3.1",
+    "lodash": "^4.17.10",
+    "mmdb-reader": "^1.1.0"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "geoip",
+    "serverless",
+    "geolocation",
+    "gdpr",
+    "solution",
+    "country",
+    "code",
+    "detect",
+    "api"
+  ],
+  "author": "Alfonso Gober <alfonso.gober.jr@gmail.com>",
+  "license": "MIT"
+}
