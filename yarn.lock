@@ -14,10 +14,6 @@ hashlru@^2.0.0:
   version "2.2.1"
   resolved "https://registry.yarnpkg.com/hashlru/-/hashlru-2.2.1.tgz#10f2099a0d7c05a40f2beaf5c1d39cf2f7dabf36"
 
-lodash@^4.17.10:
-  version "4.17.10"
-  resolved "https://registry.yarnpkg.com/lodash/-/lodash-4.17.10.tgz#1b7793cf7259ea38fb3661d4d38b3260af8ae4e7"
-
 mmdb-reader@^1.1.0:
   version "1.1.0"
   resolved "https://registry.yarnpkg.com/mmdb-reader/-/mmdb-reader-1.1.0.tgz#5985cf5c33cdfc716a9823c6fe4e61b2558c05e1"

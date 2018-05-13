@@ -1,6 +1,5 @@
 "use strict";
 
-const _ = require("lodash");
 const util = require("util");
 const Cookie = require("cookie");
 const Reader = require("mmdb-reader");
