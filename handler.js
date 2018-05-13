@@ -48,7 +48,7 @@ module.exports.edgeRedirect = (event, context, callback) => {
         location: [
           {
             key: "Location",
-            value: `https://${countryCode.toLowerCase()}.${process.env.DOMAIN}/${uri}`
+            value: `https://${countryCode.toLowerCase()}.${process.env.DOMAIN}${uri}`
           }
         ],
         ["cache-control"]: [
